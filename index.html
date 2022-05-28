@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--normalize-->
+    <!--Normalize es un fichero CSS que apenas ocupa 8 KB,  cuyo principal objetivo es mantener los estilos similares en los navegadores, ya que cada uno agrega sus propios estilos por defecto, por ejemplo te suelen agregar distintos paddings, margins, font-sizes,etc. Con Normalize CSS lo que hacemos es regularizarlos y que nuestra web se vea igual independientemente del navegador donde se visualice. Además está preparado para adaptarse completamente a HTML5.-->
+    <link rel="stylesheet" href="normalize.css">
+   
+    <!--Animate CSS-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <!--styles-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Nunito:ital,wght@0,300;0,700;0,900;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <!--Iconos fontAwesome-->
+    <script src="https://kit.fontawesome.com/b2dc0e96da.js" crossorigin="anonymous"></script>
+    <title>Mia cara italia</title>
+
+  </head>
+  <body>
+    
+    <!--header-->
+    <header class="header">
+        <!--Se agrego una animación en el titulo principal de la página-->
+        <h1 class="header__titulo animate__animated animate__fadeInDown">Mia cara italia <span></span></h1>
+    </header>
+      <!--fin header-->
+  <!--nav-->
+       <nav class="nav">
+          <a class="nav__a" href="#">Inicio</a>
+          <a class="nav__a" href="#recetas">Recetas</a>
+          <a class="nav__a" href="#form">Contacto</a>
+        </nav>
+  
+<!--fin nav-->
+
+    <!--nosotros-->
+    
+    <main>
+      <section  class="nosotros">
+        <p class="nosotros__p">
+          Mia cara Italia es un proyecto personal para los amantes de la
+          gastronomía Italiana. Para nosotros es importante compartir las
+          recetas más populares y exquisitas para que cualquier persona pueda
+          conocer y exprimentar estos sabores únicos.
+        </p>
+      </section>
+      <!--fin nosotros-->
+      
+      <!--recetas-->
+      
+      <section id="recetas" class="recetas">
+        <h2 class="recetas__titulo">Aprende las mejores recetas de nuestra querida Italia</h2>
+        <article class="receta">
+          <h3 class="receta__titulo">Ensalada de calabaza</h3>
+          <img
+            class="receta__img"
+            src="img/Ensalada de calabaza.webp"
+            alt="Imagen plato de ensalada de calabaza"
+          />
+          <p class="receta__p">
+            Un plato sencillo que nos acerca la primavera a la mesa. Compuesta
+            por guisantes, queso de oveja fresco, calabaza almizclera, tomate
+            cherri y lechuga romana.
+          </p>
+          <a href="proximamente.html" class="receta__btn">Ver receta</a>
+        </article>
+
+        <article class="receta">
+          <h3 class="receta__titulo">sopa de mejillones</h3>
+          <img
+            class="receta__img"
+            src="img/Sopa-de-mejillones.webp"
+            alt="Imagen plato de sopa de mejillones"
+          />
+          <p class="receta__p">
+            Realizada con mejillones y mucha verdura, se cocina muy suave en
+            caldo de mejillones, fondo de pescado y vino blanco. El pan de ajo
+            es un excelente acompañante.
+          </p>
+          <a href="proximamente.html" class="receta__btn"">Ver receta</a>
+        </article>
+
+        <article class="receta">
+          <h3 class="receta__titulo">peperoni ripieni</h3>
+          <img
+            class="receta__img"
+            src="img/Peperoni-ripieni.webp"
+            alt="Imagen plato de peperoni ripieni"
+          />
+          <p class="receta__p">
+            Una especialidad del sur de Italia, excelente como plato principal
+            ligero. Los sabores que le dan al relleno son alcaparras, filetes de
+            boquerón y aceitunas.
+          </p>
+          <a href="proximamente.html" class="receta__btn">Ver receta</a>
+        </article>
+      </section>
+    </main>
+    <!--fin recetas-->
+    
+    <!--Formulario-->
+      <form action="" id="form" class="form">
+      
+        <div class="form__container">
+          <h2 class="form__titulo">Contacto</h2>
+          <div class="form__group">
+            <label class="form__label" for="nombre">Nombre</label>
+            <input
+            id="nombre"
+             class="form__input"
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ej: Luis Mazo"
+             
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="email">Email</label>
+            <input
+            id="email"
+            class="form__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Ej: luis.mzo@hotmail.com"
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="asunto">Asunto</label>
+            <input
+            id="asunto"
+            class="form__input"
+              type="asunto"
+              id="asunto"
+              name="asunto"
+              placeholder="Ej: Sugerencia de nuevas recetas"
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="mensaje">Mensaje</label>
+            <textarea
+             id="text-area"
+             class="form__textArea"
+              name="mensaje"
+              id="mensaje"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <input class="form__btn-submit" type="submit" value="enviar">
+        </div>
+        <p class="form__warnings"></p>
+      </form>
+<!--fin formulario-->
+
+<!--Article-->
+<article class="articulo">
+  <h2 class="articulo__titulo">
+    Conoce Osteria Francescana, una de los mejores restaurantes de comida italiana del mundo
+  </h2>
+
+  <div class="articulo__video">
+    <iframe src="https://www.youtube.com/embed/bjN1-C76ugQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+</article>
+<!--fin article-->
+
+
+    <footer class="footer">
+      <p class="footer__p">Luis Mazo &copy; 2022    
+        <a href="https://www.instagram.com/lmzo_/" target="_blank"><i class="fa-brands fa-instagram"></i>  </a>
+        <a href="https://www.linkedin.com/in/luismazo" target="_blank"><i class="fa-brands fa-linkedin"></i> </a>
+      </p>
+   
+    </footer>
+
+    <!--Script-->
+    
+    <script src="app.js"></script>
+
+  </body>
+</html>
